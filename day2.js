@@ -1,10 +1,10 @@
 import fs from "fs";
 
 let total = 0;
-let input = fs.readFileSync("input2.txt", { encoding: "utf8" }).split("\n");
+let lines = fs.readFileSync("input2.txt", { encoding: "utf8" }).split("\n");
 
 // const max = { red: 12, green: 13, blue: 14 }; // Part 1
-input.map((e) => {
+lines.map((e) => {
   const sets = e.split(": ")[1].split("; ");
   // let possible = true; // Part 1
   let sumOfGame; // Part 2
